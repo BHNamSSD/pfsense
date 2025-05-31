@@ -104,7 +104,7 @@
         <mxCell id="N4NqB1LONKTEMlchDpm5-15" value="&lt;div&gt;Cấu hình HA&lt;/div&gt;&lt;div&gt;&amp;nbsp;PF-MASTER và PF-BACK&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="362" y="310" width="188" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="N4NqB1LONKTEMlchDpm5-16" value="&lt;div&gt;&lt;span&gt;Virtual IP:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;WAN: DHCP-192.168.1.0/24&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;DMZ: 172.16.10.0/24&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;SOC: 22.22.22.0/29&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1;labelPosition=center;verticalLabelPosition=middle;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="N4NqB1LONKTEMlchDpm5-16" value="&lt;div&gt;&lt;span&gt;Virtual IP:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;WAN: 192.168.1.254/24&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;DMZ: 172.16.10.254/24&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;SOC: 22.22.22.5/29&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1;labelPosition=center;verticalLabelPosition=middle;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="10" y="620" width="220" height="150" as="geometry" />
         </mxCell>
       </root>
