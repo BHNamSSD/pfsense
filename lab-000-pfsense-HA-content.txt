@@ -84,17 +84,3 @@ Chi phí sử dụng		Miễn phí				Phụ thuộc thiết bị			Cần license 
 
 
 
-
-
-
-
-
-
-📌 YÊU CẦU TRƯỚC KHI TRIỂN KHAI:
-Hai thiết bị pfSense (vật lý hoặc ảo hóa), cài đặt giống nhau.
-Cấu hình tối thiểu 3 interface trên mỗi thiết bị:
-	+WAN (kết nối internet)
-	+LAN (nội bộ)
-	+SYNC (đồng bộ CARP + XMLRPC)Các thiết bị phải trong cùng subnet mạng LAN và SYNC.
-Địa chỉ IP riêng biệt cho mỗi interface và một IP ảo CARP dùng chung cho cả 2 thiết bị.
-
