@@ -6,10 +6,53 @@ Thiết lập HA (High Availability) giữa hai firewall pfSense sử dụng CAR
 1. 🔁 Tự động chuyển đổi (Failover) không gián đoạn
 Khi thiết bị pfSense Master gặp sự cố (mất điện, lỗi phần mềm, kết nối mạng bị đứt...), thiết bị Backup tự động tiếp quản IP ảo mà không gây gián đoạn dịch vụ.
 Các client vẫn kết nối qua IP ảo như bình thường.
+
 2. 🧠 Đồng bộ trạng thái kết nối (State Synchronization)
 CARP đi kèm với khả năng đồng bộ hóa trạng thái kết nối (pfSync) giữa các thiết bị pfSense.
 Giúp duy trì các kết nối TCP/UDP đang mở (VPN, tải xuống, ứng dụng...) khi chuyển từ Master sang Backup → không làm rớt phiên kết nối.
 
+3. 🧩 IP ảo dùng chung (Virtual IP Sharing)
+Thiết lập một IP ảo duy nhất mà client trong mạng LAN hoặc thiết bị ở ngoài Internet sử dụng để truy cập.
+IP ảo này được gán cho thiết bị Master, và chuyển cho thiết bị Backup khi có sự cố.
+
+4. 📦 Đồng bộ cấu hình tự động (XMLRPC Sync)
+Cấu hình firewall, NAT, DHCP, VPN, và nhiều phần khác tự động được đồng bộ từ Master sang Backup, giúp tiết kiệm thời gian quản trị và giảm rủi ro sai lệch cấu hình.
+•	User manager user and group
+•	Authentication servers (e.g. LDAP, RADIUS)
+•	Certificate Authorities, Certificates, and Certificates Revocation Lists
+•	Firewall rules
+•	Firewall schedules
+•	Firewall aliases
+•	NAT configuration
+•	IPsec configuration
+•	OpenVPN configuration (Implies CA/Cert/CRL Sync)
+•	DHCP Server settings
+•	DHCP Relay settings
+•	DHCPv6 Relay settings
+•	WoL Server settings
+•	Static Route configuration
+•	Virtual IPs
+•	Traffic Shaper configuration
+•	Traffic Shaper Limiters configuration
+•	DNS Forwarder and DNS Resolver configuration
+•	Captive Portal
+
+5. 🔐 Bảo mật và xác thực
+CARP sử dụng password và VHID group để xác định các node thuộc cùng nhóm HA, đảm bảo chỉ những node tin cậy mới tham gia vào HA cluster.
+
+6. 📉 Giảm downtime – Tăng độ sẵn sàng
+Hệ thống đạt độ sẵn sàng cao nhờ:
++ Failover trong vòng vài giây.
++ Không cần thao tác thủ công.
++ Hạn chế thời gian ngắt dịch vụ đến mức tối thiểu.
+
+7. ⚙️ Tùy biến cao và dễ mở rộng
+Có thể mở rộng nhiều IP ảo cho nhiều VLAN, nhiều interface (LAN, DMZ, WAN...).
+Có thể kết hợp với Load Balancer, Multi-WAN, VPN, v.v.
+
+8. 🆓 Miễn phí & mã nguồn mở
+CARP được tích hợp miễn phí trong pfSense.
+Không cần license hay thiết bị phần cứng đắt tiền.
 
 
 
