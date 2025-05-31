@@ -1,1 +1,16 @@
+✅ MỤC TIÊU:
+Thiết lập HA (High Availability) giữa hai firewall pfSense sử dụng CARP (Common Address Redundancy Protocol) 
+để đảm bảo tính sẵn sàng cao: khi một thiết bị gặp sự cố, thiết bị còn lại sẽ tự động tiếp quản.
+
+
+
+
+
+📌 YÊU CẦU TRƯỚC KHI TRIỂN KHAI:
+Hai thiết bị pfSense (vật lý hoặc ảo hóa), cài đặt giống nhau.
+Cấu hình tối thiểu 3 interface trên mỗi thiết bị:
+	+WAN (kết nối internet)
+	+LAN (nội bộ)
+	+SYNC (đồng bộ CARP + XMLRPC)Các thiết bị phải trong cùng subnet mạng LAN và SYNC.
+Địa chỉ IP riêng biệt cho mỗi interface và một IP ảo CARP dùng chung cho cả 2 thiết bị.
 
