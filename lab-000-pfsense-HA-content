@@ -54,7 +54,34 @@ Có thể kết hợp với Load Balancer, Multi-WAN, VPN, v.v.
 CARP được tích hợp miễn phí trong pfSense.
 Không cần license hay thiết bị phần cứng đắt tiền.
 
+📊 BẢNG SO SÁNH: CARP vs VRRP vs HSRP
+Tiêu chí		CARP					VRRP					HSRP
+Tên đầy đủ		Common Address Redundancy Protocol	Virtual Router Redundancy Protocol	Hot Standby Router Protocol
 
+Nhà phát triển		OpenBSD (mã nguồn mở)			IETF (chuẩn mở – RFC 5798)		Cisco Systems (độc quyền)
+
+Hỗ trợ hệ 		BSD, pfSense, OPNsense			Hầu hết router/switch 			Chỉ thiết bị Cisco	
+điều hành						hỗ trợ tiêu chuẩn	
+								
+Mã nguồn		Miễn phí, mã nguồn mở			Mã nguồn đóng nhưng là tiêu chuẩn mở	Độc quyền (Cisco)
+
+Số thiết bị		Không giới hạn				Tối đa 255				Tối đa 255
+hỗ trợ	
+
+Bảo mật 		Có (passphrase, encryption 		Có xác thực đơn giản			Có xác thực (mạnh hơn VRRP)
+tích hợp		 có thể mở rộng)
+
+IP ảo 			Có					Có					Có
+dùng chung	
+
+Chọn Master/Active	Dựa vào skew + VHID			Dựa vào priority			Dựa vào priority
+
+Chuyển đổi nhanh 	Rất nhanh (≤1s tùy cấu hình)		Nhanh (1–3s)				Tương đối nhanh (≤3s)
+(Failover)
+Ứng dụng phổ biến	pfSense, OPNsense, OpenBSD Firewall	Cisco, Juniper, Mikrotik, Linux		Cisco firewall, router, switch
+
+
+Chi phí sử dụng		Miễn phí				Phụ thuộc thiết bị			Cần license Cisco
 
 
 
