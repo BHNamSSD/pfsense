@@ -61,7 +61,7 @@ Tên đầy đủ		Common Address Redundancy Protocol	Virtual Router Redundancy 
 Nhà phát triển		OpenBSD (mã nguồn mở)			IETF (chuẩn mở – RFC 5798)		Cisco Systems (độc quyền)
 
 Hỗ trợ hệ 		BSD, pfSense, OPNsense			Hầu hết router/switch 			Chỉ thiết bị Cisco	
-điều hành						hỗ trợ tiêu chuẩn	
+điều hành							hỗ trợ tiêu chuẩn	
 								
 Mã nguồn		Miễn phí, mã nguồn mở			Mã nguồn đóng nhưng là tiêu chuẩn mở	Độc quyền (Cisco)
 
@@ -79,7 +79,6 @@ Chọn Master/Active	Dựa vào skew + VHID			Dựa vào priority			Dựa vào p
 Chuyển đổi nhanh 	Rất nhanh (≤1s tùy cấu hình)		Nhanh (1–3s)				Tương đối nhanh (≤3s)
 (Failover)
 Ứng dụng phổ biến	pfSense, OPNsense, OpenBSD Firewall	Cisco, Juniper, Mikrotik, Linux		Cisco firewall, router, switch
-
 
 Chi phí sử dụng		Miễn phí				Phụ thuộc thiết bị			Cần license Cisco
 
