@@ -7,7 +7,7 @@
         <mxCell id="BepguHZ5mL5OvtdZyTlk-1" value="" style="shape=mxgraph.cisco.storage.cloud;sketch=0;html=1;pointerEvents=1;dashed=0;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="37" y="102" width="186" height="106" as="geometry" />
         </mxCell>
-        <mxCell id="BepguHZ5mL5OvtdZyTlk-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="BepguHZ5mL5OvtdZyTlk-60" target="BepguHZ5mL5OvtdZyTlk-1" edge="1">
+        <mxCell id="BepguHZ5mL5OvtdZyTlk-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.89;entryY=0.87;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="BepguHZ5mL5OvtdZyTlk-60" target="BepguHZ5mL5OvtdZyTlk-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="405" y="382" as="sourcePoint" />
             <mxPoint x="195.53999999999996" y="194.22000000000003" as="targetPoint" />
