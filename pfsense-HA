@@ -92,11 +92,8 @@
             <mxPoint x="870" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="N4NqB1LONKTEMlchDpm5-1" value="&lt;h4 align=&quot;left&quot;&gt;WAN &lt;br&gt;&lt;/h4&gt;&lt;h4 align=&quot;left&quot;&gt;DMZ&lt;/h4&gt;&lt;h4 align=&quot;left&quot;&gt;PFWAN-SOC&lt;/h4&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="550" width="110" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="N4NqB1LONKTEMlchDpm5-3" value="&lt;h4 align=&quot;left&quot;&gt;DHCP&lt;/h4&gt;&lt;h4 align=&quot;left&quot;&gt;172.16.10.0/24&lt;/h4&gt;&lt;h4 align=&quot;left&quot;&gt;22.22.22.0/30&lt;/h4&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="550" width="140" height="150" as="geometry" />
+        <mxCell id="N4NqB1LONKTEMlchDpm5-4" value="&lt;div&gt;&lt;span&gt;WAN-DHCP&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;SYNC-11.11.11.0/30&lt;/span&gt;&lt;/div&gt;&lt;div&gt;PFWANSOC-22.22.22.0/29&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1151" y="560" width="220" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
