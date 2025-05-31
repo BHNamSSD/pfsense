@@ -2,6 +2,21 @@
 Thiết lập HA (High Availability) giữa hai firewall pfSense sử dụng CARP (Common Address Redundancy Protocol) 
 để đảm bảo tính sẵn sàng cao: khi một thiết bị gặp sự cố, thiết bị còn lại sẽ tự động tiếp quản.
 
+🌟 TÍNH NĂNG NỔI BẬT CỦA CARP TRONG PFSENSE
+1. 🔁 Tự động chuyển đổi (Failover) không gián đoạn
+Khi thiết bị pfSense Master gặp sự cố (mất điện, lỗi phần mềm, kết nối mạng bị đứt...), thiết bị Backup tự động tiếp quản IP ảo mà không gây gián đoạn dịch vụ.
+Các client vẫn kết nối qua IP ảo như bình thường.
+2. 🧠 Đồng bộ trạng thái kết nối (State Synchronization)
+CARP đi kèm với khả năng đồng bộ hóa trạng thái kết nối (pfSync) giữa các thiết bị pfSense.
+Giúp duy trì các kết nối TCP/UDP đang mở (VPN, tải xuống, ứng dụng...) khi chuyển từ Master sang Backup → không làm rớt phiên kết nối.
+
+
+
+
+
+
+
+
 
 
 
