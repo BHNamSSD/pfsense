@@ -82,5 +82,51 @@ Chuyển đổi nhanh 	Rất nhanh (≤1s tùy cấu hình)		Nhanh (1–3s)				T
 
 Chi phí sử dụng		Miễn phí				Phụ thuộc thiết bị			Cần license Cisco
 
+⚠️ Nhược điểm khi sử dụng CARP + HA Sync trong pfSense 2.7.2
+1. 🔁 Chỉ hỗ trợ mô hình Active/Passive
+pfSense HA chỉ cho phép 1 thiết bị hoạt động (Master), thiết bị còn lại dự phòng (Backup).
+Không hỗ trợ Active/Active hoặc cân bằng tải giữa các node.
+
+2. 🧠 Đồng bộ một chiều (Master → Backup)
+XMLRPC Sync chỉ đồng bộ từ Master sang Backup.
+Nếu thay đổi trên Backup → không tự đồng bộ lại lên Master khi failback.
+Cần nhớ chỉ cấu hình trên Master để tránh xung đột.
+
+3. ⚙️ Không đồng bộ toàn bộ hệ thống
+Một số cấu hình vẫn không được đồng bộ tự động, ví dụ:
+•	Gói mở rộng (Packages)
+•	Tùy chỉnh cron job / script shell
+•	Giao diện WebGUI (màu sắc, theme)
+•	Logging (log files, syslog targets)
+•	RRD data (traffic graph, history)
+    → Phải cấu hình thủ công trên từng node.
+
+4. 🧱 Không đồng bộ dữ liệu động
+Các trạng thái động như session OpenVPN, IPsec phase, log hoặc monitoring state… không được đồng bộ hoàn hảo 100%.
+Dù có pfSync, một số phiên có thể gián đoạn nhẹ khi chuyển đổi (ví dụ: SSH session, RDP nếu không bật sync state đầy đủ).
+
+5. 🧪 Khó kiểm thử failover thực tế
+Khi test chuyển đổi Master <-> Backup, một số dịch vụ (VPN, DHCP lease) có thể phản ứng không như mong đợi nếu không cấu hình đúng timeout/keepalive.
+Cần kiểm thử kỹ để đảm bảo hoạt động mượt mà.
+
+6. 💥 Split-brain / xung đột IP ảo
+Nếu kết nối SYNC giữa 2 node bị lỗi hoặc cấu hình không đồng nhất (VHID trùng, passphrase sai, interface đặt nhầm), cả 2 có thể cùng nghĩ mình là Master → gây xung đột IP trong mạng.
+Phải cấu hình đúng VHID, skew, sync interface, và bật preempt hợp lý.
+
+7. 🔐 Bảo mật mặc định còn cơ bản
+CARP không mã hóa traffic giữa các node.
+Nếu không dùng VLAN hoặc bảo vệ mạng SYNC kỹ, kẻ xấu có thể sniff hoặc can thiệp vào quá trình failover.
+
+8. 📉 Giám sát HA còn hạn chế
+pfSense không có công cụ giám sát cluster trực quan (dashboard, alert nâng cao).
+Không có báo cáo failover history, uptime history, v.v. → phải dựa vào log và syslog để phân tích.
+
+🛠️ Gợi ý giảm thiểu nhược điểm
+•	Luôn cấu hình chỉ trên Master
+•	Dùng VLAN hoặc mạng riêng cho interface SYNC
+•	Cấu hình đầy đủ State Synchronization trong System > High Avail. Sync
+•	Thiết lập monitoring riêng qua Zabbix, Prometheus hoặc syslog tập trung
+•	Nếu cần đồng bộ các phần chưa hỗ trợ, dùng script thủ công (rsync, cron...)
+
 
 
