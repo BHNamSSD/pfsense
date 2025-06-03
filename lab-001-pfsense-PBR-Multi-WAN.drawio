@@ -32,10 +32,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-7" value="WAN-DHCP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="467" y="410" width="80" height="30" as="geometry" />
+          <mxGeometry x="501" y="410" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-8" value="WAN-DHCP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="575" y="410" width="80" height="30" as="geometry" />
+          <mxGeometry x="600" y="410" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-15" target="UHD8-62cej7GR82FmaJd-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -44,10 +44,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-10" value="PF-SOC" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="522" y="728" width="78" height="53" as="geometry" />
+          <mxGeometry x="470" y="740" width="78" height="53" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-11" value="22.22.22.2/29" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="531" y="798" width="60" height="30" as="geometry" />
+          <mxGeometry x="487" y="810" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-12" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.12;entryY=0.9;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-10" target="UHD8-62cej7GR82FmaJd-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -59,16 +59,16 @@
           <mxGeometry x="20" y="280" width="220" height="193" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-14" value="&lt;div&gt;PF-MATER&lt;/div&gt;" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="402" y="538" width="78" height="53" as="geometry" />
+          <mxGeometry x="290" y="561" width="78" height="53" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-15" value="PF-BACK" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="642" y="538" width="78" height="53" as="geometry" />
+          <mxGeometry x="655" y="558" width="78" height="53" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-16" value="22.22.22.1/29" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="400" y="618" width="60" height="30" as="geometry" />
+          <mxGeometry x="330" y="630" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-17" value="&lt;div&gt;22.22.22.3/29&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="660" y="618" width="60" height="30" as="geometry" />
+          <mxGeometry x="630" y="640" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-14" target="UHD8-62cej7GR82FmaJd-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -83,10 +83,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-20" value="&lt;div&gt;11.11.11.1/30&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="490" y="561" width="68" height="30" as="geometry" />
+          <mxGeometry x="380" y="588" width="68" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-21" value="&lt;div&gt;11.11.11.2/30&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="575" y="561" width="68" height="30" as="geometry" />
+          <mxGeometry x="575" y="588" width="68" height="30" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-22" value="&lt;div&gt;Cấu hình HA CARP kết hợp&amp;nbsp;&lt;/div&gt;Policy-Based Routing &amp;amp; Multi-WAN" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="467" y="196" width="188" height="90" as="geometry" />
@@ -98,7 +98,7 @@
           <mxGeometry x="20" y="678" width="310" height="150" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-25" value="PRE-WAN" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="387" width="78" height="53" as="geometry" />
+          <mxGeometry x="496" y="460" width="78" height="53" as="geometry" />
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;entryPerimeter=0;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-14" target="UHD8-62cej7GR82FmaJd-25">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -106,14 +106,29 @@
             <mxPoint x="580" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UHD8-62cej7GR82FmaJd-29" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-25" target="UHD8-62cej7GR82FmaJd-3">
+        <mxCell id="UHD8-62cej7GR82FmaJd-29" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-25" target="UHD8-62cej7GR82FmaJd-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="472" y="578" as="sourcePoint" />
             <mxPoint x="400" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="UHD8-62cej7GR82FmaJd-30" value="WAN-DHCP" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="370" width="80" height="30" as="geometry" />
+          <mxGeometry x="407" y="410" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UHD8-62cej7GR82FmaJd-31" value="33.33.33.2/29" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="540" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UHD8-62cej7GR82FmaJd-32" value="33.33.33.1/29" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="501" y="528" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UHD8-62cej7GR82FmaJd-34" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;entryPerimeter=0;" edge="1" parent="1" source="UHD8-62cej7GR82FmaJd-15" target="UHD8-62cej7GR82FmaJd-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="482" y="588" as="sourcePoint" />
+            <mxPoint x="410" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UHD8-62cej7GR82FmaJd-35" value="33.33.33.3/29" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="583" y="540" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
