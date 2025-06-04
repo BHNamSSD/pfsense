@@ -6,29 +6,45 @@ Danh sách bài Lab pfSense từ cơ bản đến nâng cao
 📦 Phần 1: Cơ bản (Beginner)
 
 STT	Tên Lab	                                                Mục tiêu
+
 1	  Cài đặt pfSense trên Proxmox, VirtualBox hoặc VMware    Làm quen cài đặt, cấu hình ban đầu
+
 2	  Cấu hình WAN & LAN, NAT mặc định	                      Kết nối internet, cấp IP cho client
+
 3	  Đổi IP LAN và cấu hình DHCP Server	                    Thực hành phân phối IP nội bộ
+
 4	  Tạo firewall rule cơ bản (cho/block ICMP, HTTP)	        Làm chủ cơ chế lọc gói
+
 5	  Cấu hình DNS Resolver/Forwarder	                        Quản lý truy vấn DNS qua pfSense
+
 6	  Sao lưu & khôi phục cấu hình	                          Backup định kỳ và khôi phục hệ thống
 
 🔐 Phần 2: Bảo mật & Firewall
 
 STT	Tên Lab	                                                Mục tiêu
+
 7	  Cấu hình firewall rules nâng cao	                      Lọc theo IP, port, time-based rule
+
 8	  Block truy cập theo quốc gia (GeoIP) với pfBlockerNG	  Cài và cấu hình pfBlockerNG
+
 9	  IDS/IPS với Snort hoặc Suricata	                        Phát hiện và ngăn chặn tấn công
+
 10	Tạo alias IP/group và áp dụng vào rules	                Tối ưu quản lý firewall rule
+
 11	Port Forwarding (camera, web server)	                  NAT 1:1, NAT port range
 
 🌐 Phần 3: Dịch vụ mạng (Network Services)
 
 STT	Tên Lab	                                                Mục tiêu
+
 12	Captive Portal	                                        Đăng nhập mạng bằng trang web
+
 13	Cấu hình Multi-WAN (failover và load balancing)	        Internet dự phòng, phân tải băng thông
+
 14	Static Routing giữa 2 mạng LAN	                        Routing cơ bản
+
 15	Dynamic Routing (OSPF qua FRR package)	                Học OSPF dùng FRR
+
 16	DHCP Relay & DNS over TLS	                              Tăng bảo mật dịch vụ mạng
 
 🧱 Phần 4: VPN
