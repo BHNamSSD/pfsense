@@ -3,6 +3,7 @@ pfsense-lab
 
 Danh sách bài Lab pfSense từ cơ bản đến nâng cao
 📦 Phần 1: Cơ bản (Beginner)
+
 STT	Tên Lab	                                                Mục tiêu
 1	  Cài đặt pfSense trên Proxmox, VirtualBox hoặc VMware    Làm quen cài đặt, cấu hình ban đầu
 2	  Cấu hình WAN & LAN, NAT mặc định	                      Kết nối internet, cấp IP cho client
@@ -12,6 +13,7 @@ STT	Tên Lab	                                                Mục tiêu
 6	  Sao lưu & khôi phục cấu hình	                          Backup định kỳ và khôi phục hệ thống
 
 🔐 Phần 2: Bảo mật & Firewall
+
 STT	Tên Lab	                                                Mục tiêu
 7	  Cấu hình firewall rules nâng cao	                      Lọc theo IP, port, time-based rule
 8	  Block truy cập theo quốc gia (GeoIP) với pfBlockerNG	  Cài và cấu hình pfBlockerNG
@@ -20,6 +22,7 @@ STT	Tên Lab	                                                Mục tiêu
 11	Port Forwarding (camera, web server)	                  NAT 1:1, NAT port range
 
 🌐 Phần 3: Dịch vụ mạng (Network Services)
+
 STT	Tên Lab	                                                Mục tiêu
 12	Captive Portal	                                        Đăng nhập mạng bằng trang web
 13	Cấu hình Multi-WAN (failover và load balancing)	        Internet dự phòng, phân tải băng thông
@@ -28,6 +31,7 @@ STT	Tên Lab	                                                Mục tiêu
 16	DHCP Relay & DNS over TLS	                              Tăng bảo mật dịch vụ mạng
 
 🧱 Phần 4: VPN
+
 STT	Tên Lab	                                                Mục tiêu
 17	OpenVPN: Client-to-Site	                                Cho người dùng kết nối từ xa
 18	OpenVPN: Site-to-Site	                                  Kết nối 2 văn phòng
@@ -36,6 +40,7 @@ STT	Tên Lab	                                                Mục tiêu
 21	L2TP/IPsec cho client mobile	                          Hỗ trợ thiết bị không cài phần mềm VPN riêng
 
 🧭 Phần 5: VLAN, Routing & Enterprise
+
 STT	Tên Lab	                                                Mục tiêu
 22	Cấu hình VLAN trên pfSense & switch	                    Mạng nội bộ tách biệt bảo mật
 23	Routing giữa VLAN	                                      Cho phép VLAN giao tiếp an toàn
@@ -44,6 +49,7 @@ STT	Tên Lab	                                                Mục tiêu
 26	Bridge mode giữa 2 interface	                          Cầu nối mạng hoặc IDS bridge
 
 📈 Phần 6: Monitoring, Logging & Hiệu suất
+
 STT	Tên Lab	                                                Mục tiêu
 27	Traffic Graph & Bandwidth Monitoring	                  Xem real-time lưu lượng
 28	Sử dụng ntopng để theo dõi lưu lượng chi tiết	          Xem top IP/port/dịch vụ
@@ -52,6 +58,7 @@ STT	Tên Lab	                                                Mục tiêu
 31	Tối ưu hóa cấu hình pfSense	                            Phân tích và tinh chỉnh hiệu suất
 
 🔄 Phần 7: Khôi phục & HA (High Availability)
+
 STT	Tên Lab	                                                Mục tiêu
 32	Backup tự động lên cloud/local	                        Dùng cron hoặc gắn NAS
 33	Cấu hình CARP (Cluster failover)	                      Dự phòng firewall tự động
